@@ -307,7 +307,7 @@ html, body {
   color: white;
 }
 .check-item.done .check-box { background: #3caa7e; border-color: #3caa7e; }
-.check-item.done .check-text { color: #999; text-decoration: line-through; }
+.check-item.done .check-text { color: #6b8a9a; }
 .check-text { font-size: 14px; line-height: 1.5; color: #2a4a5a; }
 
 .progress-bar-wrap { margin-bottom: 14px; }
@@ -741,7 +741,7 @@ html, body {
         </div>
         <div class="step-row">
           <div class="step-circle">4</div>
-          <div><div class="step-text" style="font-weight:600;">ส่งเอกสารที่กองตรวจจ่าย</div><div class="step-sub">ยื่นเอกสารให้เจ้าหน้าที่ภายในระยะเวลาที่กำหนด</div></div>
+          <div><div class="step-text" style="font-weight:600;">ส่งเอกสารที่กองตรวจจ่าย</div><div class="step-sub">ยื่นเอกสารภายในระยะเวลาที่กำหนด</div></div>
         </div>
         <div class="step-row">
           <div class="step-circle">5</div>
@@ -815,7 +815,10 @@ html, body {
     </div>
     <div class="content-area">
 
-      <div class="tip-box">💡 พิมพ์ชื่อยา (ไทย หรือ อังกฤษ) เพื่อตรวจสอบสิทธิ์การเบิก</div>
+      <div class="tip-box">💡 พิมพ์ชื่อยา (ไทย หรือ อังกฤษ) เพื่อตรวจสอบสิทธิ์การเบิก
+	</div><div style="color:#d93025; font-weight:700; font-size:14px; line-height:1.6; margin-bottom:12px; padding: 0 4px;">
+  ⚠️ ยาบางชนิดสามารถใช้สิทธิเบิกจ่ายได้ ทั้งนี้ต้องมีคำสั่งจากแพทย์ผู้รักษา
+</div>
 
       <!-- ช่องค้นหา -->
       <div class="content-card" style="display:flex;align-items:center;gap:10px;padding:12px 16px;margin-bottom:12px;">
@@ -906,7 +909,21 @@ html, body {
         <div class="contact-sub">สอบถามสถานะการเบิกจ่าย<br>และข้อสงสัยเกี่ยวกับเอกสาร</div>
         <div style="margin-top:10px;font-size:15px;font-weight:700;color:#1a3a4a;">📞 02-269-5599<br>📞 02-269-5601</div><a href="tel:022695599"><button class="contact-btn" style="margin-top:10px;margin-right:8px;">โทร 02-269-5599</button></a><a href="tel:022695601"><button class="contact-btn" style="margin-top:10px;">โทร 02-269-5601</button></a>
       </div>
-
+<div class="content-card" style="text-align:center;margin-bottom:12px;">
+  <div style="font-size:14px;font-weight:700;color:#1a3a4a;margin-bottom:8px;">
+    🔍 ตรวจสอบสถานะการเบิกจ่าย
+  </div>
+  <div style="font-size:12px;color:#6b8a9a;margin-bottom:12px;">
+    กรุณาเข้าสู่ระบบด้วย User และ Password ของท่าน
+  </div>
+  <a href="https://https://hris.port.co.th/Coach/Winlogin.aspx" target="_blank">
+    <button style="padding:12px 28px;background:linear-gradient(135deg,#2ab5d4,#1a8fa8);
+      color:white;border:none;border-radius:14px;font-family:var(--font);
+      font-size:14px;font-weight:600;cursor:pointer;width:100%;">
+      🔐 เข้าสู่ระบบตรวจสอบ
+    </button>
+  </a>
+</div>
       
 
       <div class="content-card" style="background:rgba(42,181,212,0.08);border-color:rgba(42,181,212,0.25);">
