@@ -466,7 +466,7 @@ html, body {
       <polyline points="0,16 60,16 75,16 80,4 85,28 90,8 95,20 110,20 150,20 155,16 200,16 205,4 210,28 215,8 220,20 240,20 280,20 285,16 360,16" stroke="#2ab5d4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <div class="main-title">PAT BENEFIT SERVICE</div>
-    <div class="main-subtitle">ระบบสวัสดิการค่ารักษาพยาบาล</div>
+    <div class="main-subtitle">สวัสดิการค่ารักษาพยาบาล</div>
   </div>
 
   <div class="menu-section">
@@ -534,15 +534,6 @@ html, body {
         </div>
       </div>
 
-      <div class="doc-type-card" onclick="goTo('screen-detail-drug')" style="cursor:pointer;">
-        <div class="doc-type-header" style="background:#eaf6ff;">
-          <div class="doc-type-icon">💊</div>
-          <div><div class="doc-type-name">รายการยา</div></div>
-          <span class="doc-type-badge" style="background:#2ab5d4;">ตามบัญชียา</span>
-          <span style="font-size:18px;color:#aaa;margin-left:6px;">›</span>
-        </div>
-      </div>
-
       <div class="doc-type-card" onclick="goTo('screen-detail-dental')" style="cursor:pointer;">
         <div class="doc-type-header" style="background:#fff0f0;">
           <div class="doc-type-icon">🦷</div>
@@ -563,38 +554,80 @@ html, body {
       <div class="top-bar-title">🏛️ โรงพยาบาลรัฐบาล</div>
     </div>
     <div class="content-area">
+
+      <div class="section-label">🏥 ผู้ป่วยใน <span style="color:#d93025; font-weight:700;">(นอนโรงพยาบาล)</span></div>
       <div class="doc-type-card">
         <div class="doc-type-header" style="background:#e8f8f0;">
           <div class="doc-type-icon">🏛️</div>
-          <div><div class="doc-type-name">โรงพยาบาลรัฐบาล</div></div>
-          <span class="doc-type-badge" style="background:#3caa7e;">เบิกตามจริง</span>
+          <div><div class="doc-type-name">โรงพยาบาลรัฐ - <span style="color:#d93025; font-weight:700;">ผู้ป่วยใน</span></div></div>
+          <span class="doc-type-badge" style="background:#3caa7e;">เบิกได้หมด</span>
+        </div>
+       <div class="doc-type-body">
+  <div class="doc-row">
+    <div class="doc-row-label">💰 วงเงิน</div>
+    <div class="doc-row-val">เบิกได้หมด ตามระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง</div>
+  </div>
+
+  <div class="doc-row">
+    <div class="doc-row-label">🛏️ ค่าห้อง</div>
+    <div class="doc-row-val">
+      • พนักงาน สามารถเบิกค่าห้องพักได้ไม่เกิน 1,500 บาท / วัน<br>
+      • ครอบครัว สามารถเบิกค่าห้องพักได้ไม่เกิน 1,100 บาท / วัน
+    </div>
+  </div>
+
+	 <div class="doc-row">
+    <div class="doc-row-label">👤 สิทธิ์</div>
+    <div class="doc-row-val">
+      พนักงานและครอบครัว
+    </div>
+  </div>
+ 
+  <div class="doc-row">
+    <div class="doc-row-label">👨‍👩‍👧 ครอบครัว</div>
+    <div class="doc-row-val">พ่อ-แม่ คู่สมรส บุตร หรือบุตรบุญธรรมโดยชอบด้วยกฎหมาย</div>
+  </div>
+
+</div>
+</div>
+
+<!-- ← ปิดการ์ดก่อน แล้วหมายเหตุอยู่นอกการ์ด -->
+<div style="background:rgba(217,48,37,0.08); border:1.5px solid #d93025;
+  border-radius:12px; padding:12px 16px; margin-top:10px;">
+  <div style="color:#d93025; font-weight:700; font-size:13px;">
+    ⚠️ หมายเหตุ
+  </div>
+  <div style="color:#d93025; font-weight:700; font-size:13px; margin-top:4px;">
+    จำกัดสิทธิ์การเบิกไม่เกิน 120 วัน / ปี / 1 รหัสพนักงาน
+  </div>
+</div>
+
+      <div class="section-label">🏥 ผู้ป่วยนอก <span style="color:#d93025; font-weight:700;">(OPD)</span></div></div>
+      <div class="doc-type-card">
+        <div class="doc-type-header" style="background:#e8f8f0;">
+          <div class="doc-type-icon">🏛️</div>
+          <div><div class="doc-type-name">โรงพยาบาลรัฐ - <span style="color:#d93025; font-weight:700;">ผู้ป่วยนอก </span></div></div>
+          <span class="doc-type-badge" style="background:#3caa7e;">เบิกได้หมด</span>
         </div>
         <div class="doc-type-body">
-          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">ตามจริง ตามระเบียบกรมบัญชีกลาง</div></div>
-          <div class="doc-row"><div class="doc-row-label">⚠️ เงื่อนไข</div><div class="doc-row-val">สถานพยาบาลต้องขึ้นทะเบียนกับกรมบัญชีกลาง</div></div>
-          <div class="doc-row"><div class="doc-row-label">📄 เอกสาร</div><div class="doc-row-val">ใบเสร็จตัวจริง + ใบรับรองแพทย์ + แบบฟอร์ม</div></div>
+          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกได้หมด ตามระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง</div></div>
+          <div class="doc-row"><div class="doc-row-label">👤 สิทธิ์</div><div class="doc-row-val">พนักงานและครอบครัว</div></div>
+          <div class="doc-row"><div class="doc-row-label">🏥 ครอบคลุม</div><div class="doc-row-val">โรงพยาบาลรัฐ และ โรงพยาบบาลเอกชน</div></div>
         </div>
       </div>
 
-      <div class="section-label">📋 รายละเอียดเพิ่มเติม</div>
-      <div class="content-card">
-        <!-- ✏️ แก้ไขรายละเอียดโรงพยาบาลรัฐได้ตรงนี้ -->
-        <div class="doc-row"><div class="doc-row-label">ผู้มีสิทธิ์</div><div class="doc-row-val">พนักงานประจำ และบุตรในความอุปการะ (อายุไม่เกิน 20 ปี)</div></div>
-        <div class="doc-row"><div class="doc-row-label">ประเภท</div><div class="doc-row-val">ผู้ป่วยนอก (OPD) และผู้ป่วยใน (IPD)</div></div>
-        <div class="doc-row"><div class="doc-row-label">หมายเหตุ</div><div class="doc-row-val">ยื่นเอกสารภายใน 1 ปี นับจากวันรับบริการ</div></div>
-      </div>
-
-      <div class="section-label">📄 เอกสารที่ต้องใช้</div>
+  <div class="section-label">📄 เอกสารที่ต้องใช้</div>
       <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมประทับตราสถานพยาบาล</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">แบบฟอร์มเบิกจ่ายกรอกครบถ้วน ลายเซ็นครบ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบสรุปค่ารักษาพยาบาลจากโรงพยาบาลรัฐ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">สำเนาบัตรประชาชน / บัตรประกันสังคม (ถ้ามี)</div></div>
+       <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมพร้อมลงลายมือชื่อ <br> (ลายเซ็นต์) ผู้เบิก ทุกฉบับ </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค (ถ้ามี) </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">รายละเอียดการเบิกค่ารักษา</div></div>
+      </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 <!-- ============ DETAIL: โรงพยาบาลเอกชน ============ -->
 <div id="screen-detail-priv" class="screen">
@@ -604,79 +637,64 @@ html, body {
       <div class="top-bar-title">🏢 โรงพยาบาลเอกชน</div>
     </div>
     <div class="content-area">
+
+        <div class="section-label">🏥 ผู้ป่วยใน <span style="color:#d93025; font-weight:700;">(นอนโรงพยาบาล)</span></div>
       <div class="doc-type-card">
         <div class="doc-type-header" style="background:#fef9ea;">
           <div class="doc-type-icon">🏢</div>
-          <div><div class="doc-type-name">โรงพยาบาลเอกชน</div></div>
-          <span class="doc-type-badge" style="background:#f5a623;">จำกัดวงเงิน</span>
+          <div><div class="doc-type-name">โรงพยาบาลเอกชน - <span style="color:#d93025; font-weight:700;">ผู้ป่วยใน </span></div></div>
+          <span class="doc-type-badge" style="background:#f5a623;">เบิกได้ครึ่งหนึ่ง</span>
         </div>
         <div class="doc-type-body">
-          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">ตามที่ระเบียบกำหนด (ตรวจสอบกับ HR)</div></div>
-          <div class="doc-row"><div class="doc-row-label">⚠️ หมายเหตุ</div><div class="doc-row-val">ค่ารักษาส่วนเกินวงเงินพนักงานรับผิดชอบเอง</div></div>
-          <div class="doc-row"><div class="doc-row-label">📄 เอกสาร</div><div class="doc-row-val">ใบเสร็จแยกรายการ + ใบรับรองแพทย์ + แบบฟอร์ม</div></div>
-        </div>
-      </div>
-
-      <div class="section-label">📋 รายละเอียดเพิ่มเติม</div>
-      <div class="content-card">
-        <!-- ✏️ แก้ไขรายละเอียดโรงพยาบาลเอกชนได้ตรงนี้ -->
-        <div class="doc-row"><div class="doc-row-label">ผู้มีสิทธิ์</div><div class="doc-row-val">พนักงานประจำ และบุตรในความอุปการะ (อายุไม่เกิน 20 ปี)</div></div>
-        <div class="doc-row"><div class="doc-row-label">ประเภท</div><div class="doc-row-val">ผู้ป่วยนอก (OPD) และผู้ป่วยใน (IPD)</div></div>
-        <div class="doc-row"><div class="doc-row-label">หมายเหตุ</div><div class="doc-row-val">ยื่นเอกสารภายใน 1 ปี นับจากวันรับบริการ</div></div>
-      </div>
-
-      <div class="section-label">📄 เอกสารที่ต้องใช้</div>
-      <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จระบุรายการค่าบริการแยกประเภทชัดเจน</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">แบบฟอร์มเบิกจ่ายกรอกครบถ้วน ลายเซ็นครบ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ยอดเบิกไม่เกินเพดานที่กำหนดตามระเบียบ</div></div>
-      </div>
+          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกได้ครึ่งหนึ่งของส่วนที่เบิกได้สุทธิ ภายในวงเงิน 113,520 บ./ ปี / 1 รหัสพนักงาน</div></div>
+          <div class="doc-row"><div class="doc-row-label">💊 ค่าเวชภัณฑ์</div><div class="doc-row-val">เบิกได้ตามกรมบัญชีกลาง</div></div>
+          <div class="doc-row"><div class="doc-row-label">📋 อ้างอิง</div><div class="doc-row-val">ระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง</div></div>
+            <div class="doc-row">
+    <div class="doc-row-label">🛏️ ค่าห้อง</div>
+    <div class="doc-row-val">
+      • พนักงาน สามารถเบิกค่าห้องพักได้ไม่เกิน 1,500 บาท / วัน<br>
+      • ครอบครัว สามารถเบิกค่าห้องพักได้ไม่เกิน 1,100 บาท / วัน
     </div>
   </div>
-</div>
 
-<!-- ============ DETAIL: รายการยา ============ -->
-<div id="screen-detail-drug" class="screen">
-  <div class="inner-screen">
-    <div class="top-bar">
-      <div class="back-btn" onclick="goBack()">←</div>
-      <div class="top-bar-title">💊 รายการยา</div>
-    </div>
-    <div class="content-area">
+  <div class="doc-row">
+    <div class="doc-row-label">👨‍👩‍👧 ครอบครัว</div>
+    <div class="doc-row-val">พ่อ-แม่ คู่สมรส บุตร หรือบุตรบุญธรรมโดยชอบด้วยกฎหมาย</div>
+  </div>
+
+</div>
+</div>
+     
+      <div class="section-label">🏥 ผู้ป่วยนอก <span style="color:#d93025; font-weight:700;">(OPD)</span></div></div>
       <div class="doc-type-card">
-        <div class="doc-type-header" style="background:#eaf6ff;">
-          <div class="doc-type-icon">💊</div>
-          <div><div class="doc-type-name">รายการยา</div></div>
-          <span class="doc-type-badge" style="background:#2ab5d4;">ตามบัญชียา</span>
+        <div class="doc-type-header" style="background:#fce8e6;">
+          <div class="doc-type-icon">🏢</div>
+          <div><div class="doc-type-name">โรงพยาบาลเอกชน - <span style="color:#d93025; font-weight:700;">ผู้ป่วยนอก </span></div></div>
+          <span class="doc-type-badge" style="background:#e05a5a;">เบิกไม่ได้</span>
         </div>
         <div class="doc-type-body">
-          <div class="doc-row"><div class="doc-row-label">✅ เงื่อนไข</div><div class="doc-row-val">ยาต้องอยู่ในบัญชียาหลักแห่งชาติเท่านั้น</div></div>
-          <div class="doc-row"><div class="doc-row-label">📄 เอกสาร</div><div class="doc-row-val">ใบสั่งยาจากแพทย์ + ใบเสร็จจากร้านยา</div></div>
-        </div>
-      </div>
-
-      <div class="content-card" style="background:rgba(224,90,90,0.07);border-color:rgba(224,90,90,0.2);">
-        <div class="content-card-title" style="color:#c04040;">🚫 ยาที่เบิกไม่ได้</div>
-        <div style="font-size:13px;color:#a03030;line-height:1.9;">
-          <!-- ✏️ แก้ไขรายการยาที่เบิกไม่ได้ตรงนี้ -->
-          • ยาที่ซื้อเองโดยไม่มีใบสั่งแพทย์<br>
-          • ยานอกบัญชียาหลักแห่งชาติ<br>
-          • อาหารเสริม วิตามิน<br>
-          • ยาเสริมความงาม
+          <div class="doc-row"><div class="doc-row-label">🚫 ยกเว้น</div><div class="doc-row-val">ยกเว้น กรณีต่อไปนี้เบิกได้<br>1. อุบัติเหตุ<br>2. ถูกทำร้ายร่างกาย<br>3. ICU / CCU<br>4. ผ่าตัดภายใน 24 ชม.</div></div>
+          <div class="doc-row"><div class="doc-row-label">👤 สิทธิ์</div><div class="doc-row-val">เฉพาะพนักงานเท่านั้น ครอบคลุม โรงพยาบาลรัฐ <br> และ  โรงพยาบาลเอกชน</div></div>
         </div>
       </div>
 
       <div class="section-label">📄 เอกสารที่ต้องใช้</div>
       <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบสั่งยาจากแพทย์ (ตัวจริง)</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินจากร้านยา</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ยาอยู่ในบัญชียาหลักแห่งชาติ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">แบบฟอร์มเบิกจ่ายค่ารักษาพยาบาล</div></div>
+       <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมพร้อมลงลายมือชื่อ <br> (ลายเซ็นต์) ผู้เบิก ทุกฉบับ </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค (ถ้ามี) </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">รายละเอียดการเบิกค่ารักษา</div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">หนังสือใบอนุญาตประกอบการสถานพยาบาล</div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบอนุญาตให้ดำเนินการสถานพยาบาล</div></div>
+	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์</div>
+	</div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
 
 <!-- ============ DETAIL: ทันตกรรม ============ -->
 <div id="screen-detail-dental" class="screen">
@@ -694,18 +712,27 @@ html, body {
         </div>
         <div class="doc-type-body">
           <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกตามจริง                </div></div>
-          <div class="doc-row"><div class="doc-row-label">✅ เบิกได้</div><div class="doc-row-val">อุด · ถอน · ขูดหินปูน · รักษารากฟัน</div></div>
-          <div class="doc-row"><div class="doc-row-label">🚫 ไม่ได้</div><div class="doc-row-val"><span class="not-allowed">จัดฟัน · ฟอกสีฟัน · ทำวีเนียร์ · ใส่ฟันปลอมทั้งปาก</span></div></div>
+          <div class="doc-row"><div class="doc-row-label">✅ เบิกได้</div><div class="doc-row-val">อุด · ถอน · ขูดหินปูน · รักษารากฟัน · ใส่ฟันปลอม </div></div>
+          <div class="doc-row"><div class="doc-row-label">🚫 ไม่ได้</div><div class="doc-row-val"><span class="not-allowed">จัดฟัน · ฟอกสีฟัน · ทำวีเนียร์ </span></div></div>
         </div>
       </div>
 
       <div class="section-label">📋 รายละเอียดเพิ่มเติม</div>
       <div class="content-card">
         <!-- ✏️ แก้ไขรายละเอียดทันตกรรมได้ตรงนี้ -->
-        <div class="doc-row"><div class="doc-row-label">ผู้มีสิทธิ์</div><div class="doc-row-val">พนักงานประจำเท่านั้น (ไม่รวมบุตร)</div></div>
+        <div class="doc-row"><div class="doc-row-label">ผู้มีสิทธิ์</div><div class="doc-row-val">พนักงานและครอบครัว</div></div>
         <div class="doc-row"><div class="doc-row-label">วงเงิน</div><div class="doc-row-val">เบิกตามจริง                </div></div>
-        <div class="doc-row"><div class="doc-row-label">หมายเหตุ</div><div class="doc-row-val">วงเงินไม่สะสมข้ามปีงบประมาณ</div></div>
-      </div>
+        </div>
+	<!-- ← ปิดการ์ดก่อน แล้วหมายเหตุอยู่นอกการ์ด -->
+<div style="background:rgba(217,48,37,0.08); border:1.5px solid #d93025;
+  border-radius:12px; padding:12px 16px; margin-top:10px;">
+  <div style="color:#d93025; font-weight:700; font-size:13px;">
+    ⚠️ หมายเหตุ
+  </div>
+  <div style="color:#d93025; font-weight:700; font-size:13px; margin-top:4px;">
+    โรงพยาบาลเอกชน ไม่สามารถเบิกได้
+  </div>
+</div>
 
       <div class="section-label">📄 เอกสารที่ต้องใช้</div>
       <div class="content-card" style="padding:6px 16px;">
@@ -775,40 +802,27 @@ html, body {
     </div>
     <div class="content-area">
       <div class="content-card progress-bar-wrap">
-        <div class="prog-label"><span>ความคืบหน้า</span><span class="prog-count" id="prog-text">0 / 11 รายการ</span></div>
+        <div class="prog-label"><span>ความคืบหน้า</span><span class="prog-count" id="prog-text">0 / 6 รายการ</span></div>
         <div class="prog-bg"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
       </div>
 
       <div class="section-label">📄 เอกสารพื้นฐาน (ทุกประเภท)</div>
       <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมประทับตราสถานพยาบาล</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">แบบฟอร์มเบิกจ่ายกรอกครบถ้วน ลายเซ็นครบ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ระบุชื่อ-นามสกุล เลขประจำตัวพนักงานถูกต้อง</div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมพร้อมลงลายมือชื่อ <br> (ลายเซ็นต์) ผู้เบิก ทุกฉบับ </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค (ถ้ามี) </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">รายละเอียดการเบิกค่ารักษา</div></div>
       </div>
 
-      <div class="section-label">🏛️ โรงพยาบาลรัฐบาล</div>
-      <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบสรุปค่ารักษาพยาบาลจากโรงพยาบาลรัฐ</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">สำเนาบัตรประชาชน / บัตรประกันสังคม (ถ้ามี)</div></div>
-      </div>
+      <div class="section-label">🏢 โรงพยาบาลเอกชน<span style="color:#d93025; font-weight:700;"> (เอกสารเพิ่มเติม) </span></div>
 
-      <div class="section-label">🏢 โรงพยาบาลเอกชน</div>
       <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จระบุรายการค่าบริการแยกประเภทชัดเจน</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ยอดเบิกไม่เกินเพดานที่กำหนดตามระเบียบ</div></div>
-      </div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">หนังสือใบอนุญาตประกอบการสถานพยาบาล</div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบอนุญาตให้ดำเนินการสถานพยาบาล</div></div>
+	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์</div>
+	</div>
+	</div>
 
-      <div class="section-label">💊 รายการยา</div>
-      <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบสั่งยาจากแพทย์แนบพร้อมใบเสร็จร้านยา</div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ยาอยู่ในบัญชียาหลักแห่งชาติ</div></div>
-      </div>
-
-      <div class="section-label">🦷 ทันตกรรม</div>
-      <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ระบุประเภททันตกรรม (อุด / ถอน / ขูดหินปูน)</div></div>
-      </div>
+	
 
       <button class="reset-btn" onclick="resetCheck()">🔄 รีเซ็ต Checklist ทั้งหมด</button>
     </div>
@@ -845,8 +859,8 @@ html, body {
 
       <!-- คำแนะนำก่อนพิมพ์ -->
       <div id="drug-hint" style="display:none;">
-        <div class="content-card" style="text-align:center;padding:28px 16px;background:rgba(42,181,212,0.06);border-color:rgba(42,181,212,0.2);">
-          <div style="font-size:36px;margin-bottom:10px;">🔍</div>
+        <div class="content-card" style="text-align:center;padding:5px 10px;background:rgba(42,181,212,0.06);border-color:rgba(42,181,212,0.2);">
+          <div style="font-size:35px;margin-bottom:10px;">🔍</div>
           <div style="font-size:14px;font-weight:600;color:#1a3a4a;margin-bottom:6px;">พิมพ์ชื่อยาเพื่อตรวจสอบ</div>
           <div style="font-size:12px;color:#6b8a9a;line-height:1.6;">ระบบจะแสดงผลทันทีว่ายานั้น<br>เบิกได้หรือไม่ได้</div>
         </div>
@@ -872,7 +886,46 @@ html, body {
           <button onclick="loadDrugs()" style="margin-top:12px;padding:8px 20px;background:#2ab5d4;color:white;border:none;border-radius:10px;font-family:var(--font);font-size:13px;cursor:pointer;">🔄 ลองใหม่</button>
         </div>
       </div>
+	 <!-- ยาในบัญชีหลัก -->
+      <div class="content-card" style="background:rgba(15,157,88,0.07);border-color:rgba(15,157,88,0.3);margin-bottom:12px;">
+        <div class="content-card-title" style="color:#0f9d58;">✅ ยาในบัญชีหลัก</div>
+        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
+          <span style="color:#0f9d58;font-weight:700;">เบิกได้หมด</span>
+          ตามบัญชียาหลักแห่งชาติ
+        </div>
+      </div>
 
+      <!-- ยานอกบัญชีหลัก -->
+      <div class="content-card" style="margin-bottom:12px;">
+        <div class="content-card-title" style="color:#f5a623;">⚠️ ยานอกบัญชีหลัก</div>
+        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
+          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span><br>
+ ยกเว้น มีความจำเป็นในการเบิกและมีหนังสือรับรองจากแพทย์หรือหนังสือรับรองการใช้ยานอกบัญชี <span style="color:#0f9d58;font-weight:700;">→ สามารถเบิกได้</span>
+        </div>
+      </div>
+
+      <!-- อาหารเสริมและเวชสำอาง -->
+      <div class="content-card" style="margin-bottom:12px;">
+        <div class="content-card-title" style="color:#d93025;">🚫 อาหารเสริมและเวชสำอาง</div>
+        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
+          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span><br>
+          ยกเว้น วิตามิน เอ บี ซี รวม
+          <span style="color:#0f9d58;font-weight:700;">→ เบิกได้</span>
+        </div>
+      </div>
+
+      <!-- วัคซีน -->
+      <div class="content-card" style="margin-bottom:12px;">
+        <div class="content-card-title" style="color:#2ab5d4;">💉 วัคซีน</div>
+        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
+          • วัคซีนเด็กพื้นฐานที่รัฐกำหนด
+          <span style="color:#0f9d58;font-weight:700;">เบิกได้</span><br>
+          • วัคซีนผู้ใหญ่
+          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span>
+          ยกเว้น มีคำรับรองแพทย์และมีความจำเป็น
+          <span style="color:#0f9d58;font-weight:700;">= เบิกได้</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
