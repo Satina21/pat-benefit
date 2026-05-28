@@ -838,10 +838,7 @@ html, body {
     </div>
     <div class="content-area">
 
-      <div class="tip-box">💡 พิมพ์ชื่อยา (ไทย หรือ อังกฤษ) เพื่อตรวจสอบสิทธิ์การเบิก
-	</div><div style="color:#d93025; font-weight:700; font-size:14px; line-height:1.6; margin-bottom:12px; padding: 0 4px;">
-  ⚠️ ยาบางชนิดสามารถใช้สิทธิเบิกจ่ายได้ ทั้งนี้ต้องมีคำสั่งจากแพทย์ผู้รักษา
-</div>
+      <div class="tip-box">💡 พิมพ์ชื่อยา (ไทย หรือ อังกฤษ) เพื่อตรวจสอบสิทธิ์การเบิก</div>
 
       <!-- ช่องค้นหา -->
       <div class="content-card" style="display:flex;align-items:center;gap:10px;padding:12px 16px;margin-bottom:12px;">
@@ -859,10 +856,100 @@ html, body {
 
       <!-- คำแนะนำก่อนพิมพ์ -->
       <div id="drug-hint" style="display:none;">
-        <div class="content-card" style="text-align:center;padding:5px 10px;background:rgba(42,181,212,0.06);border-color:rgba(42,181,212,0.2);">
-          <div style="font-size:35px;margin-bottom:10px;">🔍</div>
+        <div class="content-card" style="text-align:center;padding:28px 16px;background:rgba(42,181,212,0.06);border-color:rgba(42,181,212,0.2);">
+          <div style="font-size:36px;margin-bottom:10px;">🔍</div>
           <div style="font-size:14px;font-weight:600;color:#1a3a4a;margin-bottom:6px;">พิมพ์ชื่อยาเพื่อตรวจสอบ</div>
           <div style="font-size:12px;color:#6b8a9a;line-height:1.6;">ระบบจะแสดงผลทันทีว่ายานั้น<br>เบิกได้หรือไม่ได้</div>
+        </div>
+
+        <!-- รายละเอียดสิทธิ์ยา -->
+        <div class="section-label" style="margin-top:16px;">📋 ข้อมูลสิทธิ์การเบิกค่ายา</div>
+
+        <!-- Banner -->
+        <div style="background:linear-gradient(135deg,#2ab5d4,#1a8fa8);border-radius:18px;padding:16px;margin-bottom:12px;color:white;">
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">📋 สรุปสิทธิ์การเบิกค่ายา</div>
+          <div style="font-size:12px;opacity:0.9;line-height:1.7;">ตามระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง<br>ต้องมีใบสั่งยาจากแพทย์ทุกครั้ง</div>
+        </div>
+
+        <!-- ยาในบัญชีหลัก -->
+        <div style="background:white;border-radius:16px;overflow:hidden;margin-bottom:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <div style="background:linear-gradient(90deg,#0f9d58,#34a853);padding:12px 16px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:22px;">✅</span>
+            <div>
+              <div style="color:white;font-size:14px;font-weight:700;">ยาในบัญชีหลัก</div>
+              <div style="color:rgba(255,255,255,0.85);font-size:11px;">บัญชียาหลักแห่งชาติ</div>
+            </div>
+            <span style="margin-left:auto;background:rgba(255,255,255,0.25);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;">เบิกได้หมด</span>
+          </div>
+          <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
+            ยาทุกชนิดที่อยู่ในบัญชียาหลักแห่งชาติ สามารถเบิกได้เต็มจำนวน
+          </div>
+        </div>
+
+        <!-- ยานอกบัญชีหลัก -->
+        <div style="background:white;border-radius:16px;overflow:hidden;margin-bottom:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <div style="background:linear-gradient(90deg,#f5a623,#f7c063);padding:12px 16px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:22px;">⚠️</span>
+            <div>
+              <div style="color:white;font-size:14px;font-weight:700;">ยานอกบัญชีหลัก</div>
+              <div style="color:rgba(255,255,255,0.85);font-size:11px;">มีเงื่อนไขการเบิก</div>
+            </div>
+            <span style="margin-left:auto;background:rgba(255,255,255,0.25);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;">มีเงื่อนไข</span>
+          </div>
+          <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
+            <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span> โดยทั่วไป<br><br>
+            <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:10px 12px;">
+              <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:4px;">✅ ยกเว้น — เบิกได้เมื่อ</div>
+              <div style="color:#1a3a4a;">• มีความจำเป็นในการใช้ยา<br>• มีหนังสือรับรองจากแพทย์<br>• มีหนังสือรับรองการใช้ยานอกบัญชี</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- อาหารเสริมและเวชสำอาง -->
+        <div style="background:white;border-radius:16px;overflow:hidden;margin-bottom:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <div style="background:linear-gradient(90deg,#e05a5a,#f07878);padding:12px 16px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:22px;">🚫</span>
+            <div>
+              <div style="color:white;font-size:14px;font-weight:700;">อาหารเสริมและเวชสำอาง</div>
+              <div style="color:rgba(255,255,255,0.85);font-size:11px;">ส่วนใหญ่เบิกไม่ได้</div>
+            </div>
+            <span style="margin-left:auto;background:rgba(255,255,255,0.25);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;">เบิกไม่ได้</span>
+          </div>
+          <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
+            <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span> โดยทั่วไป<br><br>
+            <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:10px 12px;">
+              <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:4px;">✅ ยกเว้น — เบิกได้</div>
+              <div style="color:#1a3a4a;">วิตามิน เอ · บี · ซี รวม</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- วัคซีน -->
+        <div style="background:white;border-radius:16px;overflow:hidden;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <div style="background:linear-gradient(90deg,#2ab5d4,#5dcbe8);padding:12px 16px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:22px;">💉</span>
+            <div>
+              <div style="color:white;font-size:14px;font-weight:700;">วัคซีน</div>
+              <div style="color:rgba(255,255,255,0.85);font-size:11px;">แยกตามประเภท</div>
+            </div>
+            <span style="margin-left:auto;background:rgba(255,255,255,0.25);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;">มีเงื่อนไข</span>
+          </div>
+          <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f0f0f0;">
+              <span>วัคซีนเด็กพื้นฐานที่รัฐกำหนด</span>
+              <span style="background:#e6f4ea;color:#0f9d58;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;margin-left:8px;">✅ เบิกได้</span>
+            </div>
+            <div style="padding:8px 0 4px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span>วัคซีนผู้ใหญ่</span>
+                <span style="background:#fce8e6;color:#d93025;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;margin-left:8px;">🚫 เบิกไม่ได้</span>
+              </div>
+              <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:8px 12px;margin-top:8px;">
+                <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:2px;">✅ ยกเว้น — เบิกได้เมื่อ</div>
+                <div style="color:#1a3a4a;font-size:12px;">มีคำรับรองแพทย์ และมีความจำเป็น</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -886,46 +973,7 @@ html, body {
           <button onclick="loadDrugs()" style="margin-top:12px;padding:8px 20px;background:#2ab5d4;color:white;border:none;border-radius:10px;font-family:var(--font);font-size:13px;cursor:pointer;">🔄 ลองใหม่</button>
         </div>
       </div>
-	 <!-- ยาในบัญชีหลัก -->
-      <div class="content-card" style="background:rgba(15,157,88,0.07);border-color:rgba(15,157,88,0.3);margin-bottom:12px;">
-        <div class="content-card-title" style="color:#0f9d58;">✅ ยาในบัญชีหลัก</div>
-        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
-          <span style="color:#0f9d58;font-weight:700;">เบิกได้หมด</span>
-          ตามบัญชียาหลักแห่งชาติ
-        </div>
-      </div>
 
-      <!-- ยานอกบัญชีหลัก -->
-      <div class="content-card" style="margin-bottom:12px;">
-        <div class="content-card-title" style="color:#f5a623;">⚠️ ยานอกบัญชีหลัก</div>
-        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
-          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span><br>
- ยกเว้น มีความจำเป็นในการเบิกและมีหนังสือรับรองจากแพทย์หรือหนังสือรับรองการใช้ยานอกบัญชี <span style="color:#0f9d58;font-weight:700;">→ สามารถเบิกได้</span>
-        </div>
-      </div>
-
-      <!-- อาหารเสริมและเวชสำอาง -->
-      <div class="content-card" style="margin-bottom:12px;">
-        <div class="content-card-title" style="color:#d93025;">🚫 อาหารเสริมและเวชสำอาง</div>
-        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
-          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span><br>
-          ยกเว้น วิตามิน เอ บี ซี รวม
-          <span style="color:#0f9d58;font-weight:700;">→ เบิกได้</span>
-        </div>
-      </div>
-
-      <!-- วัคซีน -->
-      <div class="content-card" style="margin-bottom:12px;">
-        <div class="content-card-title" style="color:#2ab5d4;">💉 วัคซีน</div>
-        <div style="font-size:13px;color:#1a3a4a;line-height:1.9;">
-          • วัคซีนเด็กพื้นฐานที่รัฐกำหนด
-          <span style="color:#0f9d58;font-weight:700;">เบิกได้</span><br>
-          • วัคซีนผู้ใหญ่
-          <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span>
-          ยกเว้น มีคำรับรองแพทย์และมีความจำเป็น
-          <span style="color:#0f9d58;font-weight:700;">= เบิกได้</span>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -965,28 +1013,31 @@ html, body {
       <div class="top-bar-title">📞 ติดต่อเจ้าหน้าที่</div>
     </div>
     <div class="content-area">
+
+      <!-- ปุ่มระบบ HRIS -->
+      <div class="contact-card">
+        <div class="contact-icon">🖥️</div>
+        <div class="contact-title">ตรวจสอบสถานะการเบิกจ่าย</div>
+        <div class="contact-sub">เข้าสู่ระบบด้วย User และ Password<br>ของท่านเพื่อตรวจสอบสถานะ</div>
+        <a href="https://hris.port.co.th/" target="_blank" style="text-decoration:none;">
+          <button class="contact-btn" style="margin-top:14px;width:100%;">🔐 เข้าสู่ระบบ HRIS</button>
+        </a>
+      </div>
+
       <div class="contact-card">
         <div class="contact-icon">📞</div>
         <div class="contact-title">กองตรวจจ่าย ฝ่ายการเงินและบัญชี</div>
         <div class="contact-sub">สอบถามสถานะการเบิกจ่าย<br>และข้อสงสัยเกี่ยวกับเอกสาร</div>
         <div style="margin-top:10px;font-size:15px;font-weight:700;color:#1a3a4a;">📞 02-269-5599<br>📞 02-269-5601</div><a href="tel:022695599"><button class="contact-btn" style="margin-top:10px;margin-right:8px;">โทร 02-269-5599</button></a><a href="tel:022695601"><button class="contact-btn" style="margin-top:10px;">โทร 02-269-5601</button></a>
       </div>
-<div class="content-card" style="text-align:center;margin-bottom:12px;">
-  <div style="font-size:14px;font-weight:700;color:#1a3a4a;margin-bottom:8px;">
-    🔍 ตรวจสอบสถานะการเบิกจ่ายผ่าน HRIS
-  </div>
-  <div style="font-size:12px;color:#6b8a9a;margin-bottom:12px;">
-    กรุณาเข้าสู่ระบบด้วย User และ Password ของท่าน
-  </div>
-  <a href="https://hris.port.co.th" target="_blank">
-    <button style="padding:12px 28px;background:linear-gradient(135deg,#2ab5d4,#1a8fa8);
-      color:white;border:none;border-radius:14px;font-family:var(--font);
-      font-size:14px;font-weight:600;cursor:pointer;width:100%;">
-      🔐 เข้าสู่ระบบตรวจสอบ
-    </button>
-  </a>
-</div>
-      
+
+      <div class="contact-card">
+        <div class="contact-icon">💊</div>
+        <div class="contact-title">สำนักแพทย์การท่าเรือ (ห้องยา)</div>
+        <div class="contact-sub">สอบถามการเบิกค่ายา<br>และข้อสงสัยเกี่ยวกับยา</div>
+        <div style="margin-top:10px;font-size:15px;font-weight:700;color:#1a3a4a;">📞 02-229-9324 (สายนอก)</div>
+        <a href="tel:022299324"><button class="contact-btn" style="margin-top:10px;width:100%;">โทร 02-229-9324</button></a>
+      </div>
 
       <div class="content-card" style="background:rgba(42,181,212,0.08);border-color:rgba(42,181,212,0.25);">
         <div style="font-size:14px;font-weight:700;color:#1a5a6a;margin-bottom:10px;">⏰ เวลาทำการ</div>
