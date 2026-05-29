@@ -25,18 +25,22 @@
 html, body {
   font-family: var(--font);
   min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
   background: linear-gradient(160deg, #b8e8f5 0%, #cdf1f8 40%, #e2f8fd 100%);
   overflow-x: hidden;
 }
 
 /* === SCREEN WRAPPER === */
 .screen {
-  max-width: 420px;
+  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
   display: none;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .screen.active { display: flex; }
 
@@ -66,8 +70,10 @@ html, body {
 .home-header {
   position: relative;
   z-index: 10;
-  padding: 52px 24px 28px;
+  padding: 52px 16px 20px;
   text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* Medical icons top row */
@@ -76,17 +82,20 @@ html, body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px;
-  padding: 0 8px;
+  padding: 0 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hex-icon {
-  width: 52px; height: 52px;
+  width: 46px; height: 46px;
   background: rgba(255,255,255,0.35);
   border: 1.5px solid rgba(255,255,255,0.6);
   border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
   backdrop-filter: blur(4px);
+  flex-shrink: 0;
 }
 
 .header-center-icon {
@@ -127,31 +136,36 @@ html, body {
 .menu-section {
   position: relative;
   z-index: 10;
-  padding: 0 20px;
+  padding: 0 14px 14px;
   flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 12px;
+  width: 100%;
 }
 
 .menu-card {
   background: rgba(255,255,255,0.72);
   backdrop-filter: blur(8px);
-  border-radius: 22px;
+  border-radius: 20px;
   border: 1.5px solid rgba(255,255,255,0.85);
   box-shadow: 0 4px 20px rgba(42,181,212,0.12), 0 1px 4px rgba(0,0,0,0.06);
-  padding: 22px 16px 18px;
+  padding: 16px 10px 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .menu-card::before {
@@ -172,10 +186,10 @@ html, body {
 .menu-card:active { transform: scale(0.95); box-shadow: 0 2px 10px rgba(42,181,212,0.1); }
 
 .menu-icon-wrap {
-  width: 90px; height: 90px;
+  width: min(80px, 20vw); height: min(80px, 20vw);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 46px;
+  font-size: min(38px, 9.5vw);
   position: relative;
   flex-shrink: 0;
 }
@@ -188,7 +202,7 @@ html, body {
 .menu-icon-wrap.bg-pink { background: radial-gradient(circle at 40% 35%, #e87c9a, #e05a7a); box-shadow: 0 6px 18px rgba(224,90,122,0.4); }
 
 .menu-label {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
   text-align: center;
@@ -234,8 +248,11 @@ html, body {
 }
 
 .content-area {
-  padding: 0 20px;
+  padding: 0 16px;
   flex: 1;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Cards for content */
@@ -245,8 +262,10 @@ html, body {
   border-radius: 18px;
   border: 1.5px solid rgba(255,255,255,0.9);
   box-shadow: 0 3px 16px rgba(42,181,212,0.1);
-  padding: 18px;
+  padding: 16px;
   margin-bottom: 12px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .content-card-title {
@@ -288,10 +307,12 @@ html, body {
 .check-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid rgba(42,181,212,0.1);
   cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
 }
 .check-item:last-child { border-bottom: none; }
 
@@ -308,7 +329,7 @@ html, body {
 }
 .check-item.done .check-box { background: #3caa7e; border-color: #3caa7e; }
 .check-item.done .check-text { color: #6b8a9a; }
-.check-text { font-size: 14px; line-height: 1.5; color: #2a4a5a; }
+.check-text { font-size: 13px; line-height: 1.5; color: #2a4a5a; flex: 1; min-width: 0; word-break: break-word; }
 
 .progress-bar-wrap { margin-bottom: 14px; }
 .prog-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px; }
@@ -350,27 +371,34 @@ html, body {
   overflow: hidden;
   margin-bottom: 14px;
   box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+  width: 100%;
+  box-sizing: border-box;
 }
 .doc-type-header {
-  padding: 14px 16px;
+  padding: 12px 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
 }
-.doc-type-icon { font-size: 28px; }
-.doc-type-name { font-size: 16px; font-weight: 700; }
+.doc-type-icon { font-size: 24px; flex-shrink: 0; }
+.doc-type-name { font-size: 14px; font-weight: 700; line-height: 1.3; }
 .doc-type-badge {
   margin-left: auto;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 20px;
   color: white;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.doc-type-body { padding: 0 16px 14px; }
-.doc-row { display: flex; gap: 10px; padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.06); font-size: 13px; }
-.doc-row-label { color: #6b8a9a; min-width: 70px; flex-shrink: 0; font-weight: 500; }
-.doc-row-val { flex: 1; color: #1a3a4a; line-height: 1.5; }
+.doc-type-body { padding: 0 14px 14px; box-sizing: border-box; width: 100%; }
+.doc-row { display: flex; gap: 8px; padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.06); font-size: 13px; box-sizing: border-box; width: 100%; }
+.doc-row-label { color: #6b8a9a; min-width: 65px; max-width: 80px; flex-shrink: 0; font-weight: 500; font-size: 12px; }
+.doc-row-val { flex: 1; color: #1a3a4a; line-height: 1.5; min-width: 0; word-break: break-word; }
 
 /* Contact */
 .contact-card {
@@ -1193,6 +1221,7 @@ function goTo(id) {
   }
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
+  window.history.pushState({ screen: id }, '');
   // โหลดรายการยาครั้งแรกเมื่อเปิดหน้าตรวจสอบยา
   if (id === 'screen-check' && !drugsLoaded) {
     loadDrugs();
@@ -1205,7 +1234,22 @@ function goBack() {
   const prev = history.pop() || 'screen-home';
   document.getElementById(prev).classList.add('active');
   window.scrollTo(0, 0);
+  window.history.pushState({ screen: prev }, '');
 }
+
+// ปุ่มย้อนกลับ Hardware ของมือถือ (Android)
+window.addEventListener('popstate', function(e) {
+  const cur = document.querySelector('.screen.active');
+  if (cur && cur.id !== 'screen-home') {
+    cur.classList.remove('active');
+    const prev = history.pop() || 'screen-home';
+    document.getElementById(prev).classList.add('active');
+    window.scrollTo(0, 0);
+    window.history.pushState({ screen: prev }, '');
+  } else {
+    window.history.pushState({ screen: 'screen-home' }, '');
+  }
+});
 
 function tc(item) {
   item.classList.toggle('done');
@@ -1229,6 +1273,9 @@ function resetCheck() {
 }
 
 function tf(item) { item.classList.toggle('open'); }
+
+// ตั้งค่า history เริ่มต้น
+window.history.replaceState({ screen: 'screen-home' }, '');
 </script>
 </body>
 </html>
