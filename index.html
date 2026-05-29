@@ -674,9 +674,30 @@ html, body {
           <span class="doc-type-badge" style="background:#f5a623;">จำกัดวงเงิน</span>
         </div>
         <div class="doc-type-body">
-          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกได้ครึ่งหนึ่งของส่วนที่เบิกได้สุทธิ <br> ภายในวงเงิน 113,520 บ./ ปี / 1 รหัสพนักงาน</div></div>
-          <div class="doc-row"><div class="doc-row-label">💊 ค่าเวชภัณฑ์</div><div class="doc-row-val">เบิกได้ตามกรมบัญชีกลาง</div></div>
-          <div class="doc-row"><div class="doc-row-label">📋 อ้างอิง</div><div class="doc-row-val">ระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง</div></div>
+         <div class="doc-row">
+  <div class="doc-row-label">💰 วงเงิน</div>
+  <div class="doc-row-val">เบิกได้ครึ่งหนึ่ง<span style="color:#d93025; font-weight:700;">ในรายการเบิกได้</span> ภายในวงเงิน       113,520 บาท/ ปี</div>
+</div>
+          <div class="doc-row">
+  <div class="doc-row-label">
+    💊 ค่าเวชภัณฑ์<br>
+     · ค่าอวัยวะเทียม
+  </div>
+
+  <div class="doc-row-val">
+    เบิกได้ตามกรมบัญชีกลาง
+  </div>
+</div>
+
+<div class="doc-row">
+  <div class="doc-row-label">
+    📋 อ้างอิง
+  </div>
+
+  <div class="doc-row-val">
+    ระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง
+  </div>
+</div>
             <div class="doc-row">
     <div class="doc-row-label">🛏️ ค่าห้อง</div>
     <div class="doc-row-val">
@@ -709,11 +730,12 @@ html, body {
       <div class="section-label">📄 เอกสารที่ต้องใช้</div>
       <div class="content-card" style="padding:6px 16px;">
        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินตัวจริง พร้อมพร้อมลงลายมือชื่อผู้เบิก (ลายเซ็นต์) ทุกฉบับ </div></div>
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค (ถ้ามี) </div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบรับรองแพทย์ระบุการวินิจฉัยโรค </div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">รายละเอียดการเบิกค่ารักษา</div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">หนังสือใบอนุญาตประกอบการสถานพยาบาล</div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบอนุญาตให้ดำเนินการสถานพยาบาล</div></div>
-	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์</div>
+	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์ / คำรับรองของผู้ดำเนินการสถานพยาบาล</div></div>
+       <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">รพ.8 <span style="color:#d93025; font-weight:700;">( กรณี อุบัติเหตุ ฉุกเฉิน ) </span></div></div> </div></div>	
 	</div>
       </div>
     </div>
@@ -739,18 +761,13 @@ html, body {
           <span class="doc-type-badge" style="background:#e05a5a;">เบิกตามจริง</span>
         </div>
         <div class="doc-type-body">
-          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกตามจริง                </div></div>
+          <div class="doc-row"><div class="doc-row-label">💰 วงเงิน</div><div class="doc-row-val">เบิกตามระเบียบ กทท. 2547 อ้างอิงกรมบัญชีกลาง </div></div>
           <div class="doc-row"><div class="doc-row-label">✅ เบิกได้</div><div class="doc-row-val">อุด · ถอน · ขูดหินปูน · รักษารากฟัน · ใส่ฟันปลอม </div></div>
+	       <div class="doc-row"><div class="doc-row-label">👤 สิทธิ์</div><div class="doc-row-val">พนักงานและครอบครัว</div></div>
           <div class="doc-row"><div class="doc-row-label">🚫 ไม่ได้</div><div class="doc-row-val"><span class="not-allowed">จัดฟัน · ฟอกสีฟัน · ทำวีเนียร์ </span></div></div>
         </div>
-      </div>
-
-      <div class="section-label">📋 รายละเอียดเพิ่มเติม</div>
-      <div class="content-card">
-        <!-- ✏️ แก้ไขรายละเอียดทันตกรรมได้ตรงนี้ -->
-        <div class="doc-row"><div class="doc-row-label">ผู้มีสิทธิ์</div><div class="doc-row-val">พนักงานและครอบครัว</div></div>
-        <div class="doc-row"><div class="doc-row-label">วงเงิน</div><div class="doc-row-val">เบิกตามจริง                </div></div>
-        </div>
+	</div>
+     
 	<!-- ← ปิดการ์ดก่อน แล้วหมายเหตุอยู่นอกการ์ด -->
 <div style="background:rgba(217,48,37,0.08); border:1.5px solid #d93025;
   border-radius:12px; padding:12px 16px; margin-top:10px;">
@@ -764,7 +781,7 @@ html, body {
 
       <div class="section-label">📄 เอกสารที่ต้องใช้</div>
       <div class="content-card" style="padding:6px 16px;">
-        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินจากทันตแพทย์ตัวจริง</div></div>
+        <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบเสร็จรับเงินจากโรงพยาบาลตัวจริง</div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ระบุประเภททันตกรรมในใบเสร็จชัดเจน</div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">แบบฟอร์มเบิกจ่ายกรอกครบถ้วน ลายเซ็นครบ</div></div>
         
@@ -800,7 +817,7 @@ html, body {
         </div>
         <div class="step-row">
           <div class="step-circle">5</div>
-          <div><div class="step-text" style="font-weight:600;">รับค่ารักษาพยาบาล</div><div class="step-sub">เงินโอนเข้าบัญชีภายใน 30 วันทำการ</div></div>
+          <div><div class="step-text" style="font-weight:600;">รับค่ารักษาพยาบาล</div><div class="step-sub">รอเงินโอนเข้าบัญชี</div></div>
         </div>
       </div>
 
@@ -846,7 +863,7 @@ html, body {
       <div class="content-card" style="padding:6px 16px;">
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">หนังสือใบอนุญาตประกอบการสถานพยาบาล</div></div>
         <div class="check-item" onclick="tc(this)"><div class="check-box"></div><div class="check-text">ใบอนุญาตให้ดำเนินการสถานพยาบาล</div></div>
-	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์</div>
+	<div class="check-item" onclick="tc(this)"><div class="check-box"></div> <div class="check-text">คำรับรองแพทย์คำรับรองแพทย์ / คำรับรองของผู้ดำเนินการสถานพยาบาล</div>
 	</div>
 	</div>
 
@@ -928,7 +945,7 @@ html, body {
             <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span> โดยทั่วไป<br><br>
             <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:10px 12px;">
               <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:4px;">✅ ยกเว้น — เบิกได้เมื่อ</div>
-              <div style="color:#1a3a4a;">• มีความจำเป็นในการใช้ยา<br>• มีหนังสือรับรองจากแพทย์<br>• มีหนังสือรับรองการใช้ยานอกบัญชี</div>
+              <div style="color:#1a3a4a;">• มีใบรายการยา (ชื่อยา) <br>• มีหนังสือรับรองจากแพทย์<br>• มีหนังสือเพื่อประกอบการเบิกจ่ายกรณีผู้ป่วยจำเป็นต้องใช้ยานอกบัญชียาหลักแห่งชาติ</div>
             </div>
           </div>
         </div>
@@ -945,10 +962,6 @@ html, body {
           </div>
           <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
             <span style="color:#d93025;font-weight:700;">เบิกไม่ได้</span> โดยทั่วไป<br><br>
-            <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:10px 12px;">
-              <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:4px;">✅ ยกเว้น — เบิกได้</div>
-              <div style="color:#1a3a4a;">วิตามิน เอ · บี · ซี รวม</div>
-            </div>
           </div>
         </div>
 
@@ -958,23 +971,21 @@ html, body {
             <span style="font-size:22px;">💉</span>
             <div>
               <div style="color:white;font-size:14px;font-weight:700;">วัคซีน</div>
-              <div style="color:rgba(255,255,255,0.85);font-size:11px;">แยกตามประเภท</div>
+              <div style="color:rgba(255,255,255,0.85);font-size:11px;">มีเงื่อนไขการเบิก</div>
             </div>
             <span style="margin-left:auto;background:rgba(255,255,255,0.25);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;">มีเงื่อนไข</span>
           </div>
           <div style="padding:14px 16px;font-size:13px;color:#1a3a4a;line-height:1.8;">
             <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f0f0f0;">
-              <span>วัคซีนเด็กพื้นฐานที่รัฐกำหนด</span>
-              <span style="background:#e6f4ea;color:#0f9d58;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;margin-left:8px;">✅ เบิกได้</span>
-            </div>
+                  </div>
             <div style="padding:8px 0 4px;">
               <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span>วัคซีนผู้ใหญ่</span>
+                <span>วัคซีน</span>
                 <span style="background:#fce8e6;color:#d93025;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;margin-left:8px;">🚫 เบิกไม่ได้</span>
               </div>
               <div style="background:#f0fdf4;border-left:3px solid #0f9d58;border-radius:0 8px 8px 0;padding:8px 12px;margin-top:8px;">
                 <div style="color:#0f9d58;font-weight:700;font-size:12px;margin-bottom:2px;">✅ ยกเว้น — เบิกได้เมื่อ</div>
-                <div style="color:#1a3a4a;font-size:12px;">มีคำรับรองแพทย์ และมีความจำเป็น</div>
+                <div style="color:#1a3a4a;font-size:12px;">มีคำรับรองแพทย์ และมีความจำเป็นต้องใช้</div>
               </div>
             </div>
           </div>
@@ -1016,15 +1027,11 @@ html, body {
     <div class="content-area">
       <div class="tip-box">💡 แตะที่คำถามเพื่อดูคำตอบ</div>
 
-      <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">🧾</span>ใบเสร็จหายต้องทำอย่างไร?<span class="faq-arrow">⌄</span></div><div class="faq-a">ติดต่อสถานพยาบาลเพื่อขอใบแทนใบเสร็จ โดยต้องประทับตราจากสถานพยาบาลทุกครั้ง หากออกใบแทนไม่ได้ให้ยื่นหนังสือชี้แจงพร้อมหลักฐานอื่น เช่น สมุดประวัติการรักษา</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">🧾</span>ใบเสร็จหายต้องทำอย่างไร?<span class="faq-arrow">⌄</span></div><div class="faq-a"> กรณี ใบเสร็จรับเงินค่ารักษาพยาบาลฉบับจริงสูญหาย ผู้มีสิทธิต้องดำเนินการแจ้งความ ณ สถานีตำรวจ เพื่อขอเอกสารใบแจ้งความ จากนั้นนำใบแจ้งความติดต่อโรงพยาบาลเพื่อขอคัดสำเนาใบเสร็จรับเงินแทนฉบับจริง เมื่อได้รับสำเนาใบเสร็จรับเงินแล้ว ผู้มีสิทธิต้องจัดทำบันทึกข้อความรับรองเอกสาร พร้อมลงลายมือชื่อรับรองสำเนาถูกต้อง เพื่อประกอบการเบิกจ่ายค่ารักษาพยาบาลผ่านระบบ HRIS ต่อไป </div></div>
 
       <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">📅</span>ส่งเอกสารได้ภายในกี่วัน?<span class="faq-arrow">⌄</span></div><div class="faq-a">ต้องยื่นเอกสารภายใน 1 ปี นับจากวันที่รับบริการ หากพ้นกำหนดจะไม่สามารถเบิกได้</div></div>
 
-      <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">👨‍👩‍👧</span>เบิกค่ารักษาของบุตรได้ไหม?<span class="faq-arrow">⌄</span></div><div class="faq-a">ได้ หากบุตรอยู่ในความอุปการะและอายุไม่เกิน 20 ปี ต้องแนบสูติบัตรหรือทะเบียนบ้านด้วยทุกครั้ง</div></div>
-
       <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">📤</span>ทำไมเอกสารถูกส่งคืน?<span class="faq-arrow">⌄</span></div><div class="faq-a">🔴 ใบเสร็จไม่มีตราประทับ<br>🔴 แบบฟอร์มกรอกไม่ครบหรือลายเซ็นขาด<br>🔴 ไม่แนบใบรับรองแพทย์<br>🔴 ยอดเงินไม่ตรงกับใบเสร็จ</div></div>
-
-      <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">💳</span>เงินโอนเมื่อไหร่?<span class="faq-arrow">⌄</span></div><div class="faq-a">หลังผ่านการตรวจสอบจะโอนภายใน 30 วันทำการ หากเกินกำหนดติดต่อฝ่ายการเงินเพื่อตรวจสอบสถานะ</div></div>
 
       <div class="faq-item"><div class="faq-q" onclick="tf(this.parentElement)"><span class="faq-icon">🦷</span>จัดฟันเบิกได้ไหม?<span class="faq-arrow">⌄</span></div><div class="faq-a">ไม่ได้ ค่าจัดฟันเป็นการรักษาเพื่อความสวยงาม ไม่อยู่ในสิทธิ์การเบิก ประเภทที่เบิกได้ ได้แก่ อุด ถอน ขูดหินปูน และรักษารากฟัน</div></div>
 
